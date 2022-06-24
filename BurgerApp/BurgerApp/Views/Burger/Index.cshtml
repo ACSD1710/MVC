@@ -1,0 +1,32 @@
+﻿@using BroSBurgersApp.Models.Model.ViewModel
+@model BurgerIndexViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    int enumarator = 0;
+}
+<table class="table table-info">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Burger's Name</td>
+            <td>Burger's Price</td>
+            
+        </tr>
+    </thead>
+    
+    @foreach(var burger in @Model.Burgers)
+    {
+    <tbody>
+        <tr>
+           <td>@(++enumarator)</td> 
+           <td><a asp-controller="Burger" asp-action="Details" asp-route-id="@burger.Id" >@burger.Name</a></td>
+           <td>@burger.Price</td>  
+        </tr>
+
+
+    </tbody>
+    }
+    
+</table>
