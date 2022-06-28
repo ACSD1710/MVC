@@ -6,15 +6,18 @@
 @{
     int enumarator = 0;
 }
+<a class="btn btn-success" asp-controller="Burger" asp-action="CreateBurger"> Create Burger</a>
 <table class="table table-info">
     <thead>
         <tr>
             <td>#</td>
             <td>Burger's Name</td>
             <td>Burger's Price</td>
+            <td>                 </td>
+            
             
         </tr>
-    </thead>
+    </thead> 
     
     @foreach(var burger in @Model.Burgers)
     {
@@ -23,6 +26,9 @@
            <td>@(++enumarator)</td> 
            <td><a asp-controller="Burger" asp-action="Details" asp-route-id="@burger.Id" >@burger.Name</a></td>
            <td>@burger.Price</td>  
+           <td><a class="btn btn-warning" asp-controller="Burger" asp-action="Edit" asp-route-id="@burger.Id" >Edit</a>
+           <a class="btn btn-danger" asp-controller="Burger" asp-action="Delete" asp-route-id="@burger.Id" >Delete</a>
+           </td>
         </tr>
 
 

@@ -1,0 +1,22 @@
+﻿@using BroSBurgersApp.Models.Model.ViewModel
+@using BurgerApp.Models.Model.Domain
+@model BurgerViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form asp-controller="Burger" asp-action="CreateBurger" method="post" >
+    <label>Burger Name</label>
+        <input name = "Name" />
+    <label>Burger Price</label>
+        <input name = "Price" />
+    <label>Has Fries</label>
+        <input type="checkbox" name="HasFries" value="true" />
+    <label>Is Vegetarian</label>
+        <input type="checkbox" name="IsVegetarian" value="true" />
+    <label>IsVegan</label>
+        <input type="checkbox" name="IsVegan" value="true" />
+   <button type="submit" >Create Burger</button>
+
+</form>

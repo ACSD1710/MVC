@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\darko\\Desktop\\MVC\\BurgerApp\\BurgerApp\\BroSBurgersApp.csproj",
+      "projectUniqueName": "C:\\Users\\darko\\Desktop\\New folder\\MVC\\BurgerApp\\BurgerApp\\BroSBurgersApp.csproj",
       "projectName": "BroSBurgersApp",
-      "projectPath": "C:\\Users\\darko\\Desktop\\MVC\\BurgerApp\\BurgerApp\\BroSBurgersApp.csproj",
+      "projectPath": "C:\\Users\\darko\\Desktop\\New folder\\MVC\\BurgerApp\\BurgerApp\\BroSBurgersApp.csproj",
       "packagesPath": "C:\\Users\\darko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\darko\\Desktop\\MVC\\BurgerApp\\BurgerApp\\obj\\",
+      "outputPath": "C:\\Users\\darko\\Desktop\\New folder\\MVC\\BurgerApp\\BurgerApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\darko\\AppData\\Roaming\\NuGet\\NuGet.Config",

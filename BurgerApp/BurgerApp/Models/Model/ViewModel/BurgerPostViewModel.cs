@@ -1,11 +1,9 @@
-﻿namespace BroSBurgersApp.Models.Model.ViewModel
+﻿using BurgerApp.Models.Model.Domain;
+
+namespace BroSBurgersApp.Models.Model.ViewModel
 {
     public class BurgerPostViewModel
     {
-        public string Name { get; set; } = string.Empty;
-        public decimal Price { get; set; }
-        public bool IsVegetarian { get; set; }
-        public bool IsVegan { get; set; }
-
+        public Burger Burger { get; set; }
     }
 }
